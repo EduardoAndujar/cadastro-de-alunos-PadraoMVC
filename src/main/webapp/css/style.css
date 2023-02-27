@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+body {
+	background: linear-gradient(6deg, rgba(0,0,0,1) 0%, rgba(176,9,9,1) 78%, rgba(205,0,0,1) 100%);
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+    height: 100vh;
+   	font-family: 'Maven Pro', sans-serif;
+   	color:white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #logo-nav {
+    width: 100px;
+    margin: 20px 20px;
+}
+
+header img {
+    width: 100%;
+    border-radius: 20px;
+	margin-left: 100px;
+}
+
+header nav {
+    font-size: 20px;
+    margin: 0px 50px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    margin: auto;
+    width: 93%;
+    border-top: solid #DDDDDD 2px;
+    border-radius: 1px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-geral {
+	background-color: rgba(255,255,255,0.3);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.div-geral-cadastro {
+	padding: 10px 100px;
+}
+
+.div-geral-login {
+	width: 30%;
+}
+
+.div-geral-lista {
+	width: 100%;
+}
+
+.titulo-principal {
+	font-size: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.texto-main {
+	margin-top: 20px;
+	width: 80%;
+	text-align: justify;
+	text-indent: 40px;
+	line-height: 20px;
+}
+
+form {
+	width:100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 25px;
+}
+
+form label {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+form div {
+	margin: 10px 20px;
+}
+
+input {
+	font-family: 'Maven Pro', sans-serif;
+	border-radius: 5px;
+}
+
+input.input-login-senha{
+	width: 300px;
+	text-align: center;
+}
+
+#alerta-login {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ca0000;
+}
+
+form .div-nome-sobrenome{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#idNome, #idSobrenome{
+	width: 300px;
+	text-align: center;
+}
+
+form .div-cadastro-input-geral{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#dataNascimento{
+	width: 100px;
+	text-align: center;
+}
+
+#idCurso {
+	width: 230px;
+	text-align: center;
+}
+
+#idCPF{
+	width: 120px;
+	text-align: center;
+}
+
+#idCEP{
+	width: 90px;
+	text-align: center;
+}
+
+#idAno{
+	width: 40px;
+	text-align: center;
+}
+
+#id-botao {
+	margin-top: 23px;
+	width: 100px;
+	height: 35px;
+}
+
+
+table {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+table tbody {
+	vertical-align: middle;
+	text-align: center;
+	width: 100%;
+	overflow-x: auto;
+}
+
+td{
+	padding: 5px;
+	border: 1px solid #000000;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+table .id-celula{
+	width: 60px;
+	max-width: 60px;
+}
+
+table .nome-completo-celula{
+	width: 360px;
+	max-width: 360px;
+}
+
+table .curso-celula{
+	width: 270px;
+	max-width: 270px;
+}
+
+table .data-nascimento-celula{
+	width: 150px;
+	max-width: 150px;
+}
+
+table .idade-celula{
+	width: 48px;
+	max-width: 48px;
+}
+
+table .cpf-celula{
+	width: 120px;
+	max-width: 120px;
+}
+
+table .cep-celula{
+	width: 84px;
+	max-width: 84px;
+}
+
+table .ano-celula{
+	width: 29px;
+	max-width: 29px;
+}
+
+.link {
+	border: none;
+	background: none;
+}
+
+.div-botoes-comando {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.div-botoes-comando a {
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+	color: black;
+}
+
+footer {
+    width: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    border-top: solid #DDDDDD 2px;
+    border-radius: 1px;
+    font-size: 30px;
+}
+
+footer img {
+	margin: 40px;
+	width: 30px;
+}
