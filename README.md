@@ -36,28 +36,29 @@ Para a página, foram utilizados as linguagens de marcação HTML e CSS, bem com
 ## Modelo conceitual
 Foi baseado no padrão MVC para o modelo de fluxo do projeto, no qual é mostrado a seguir:
 
-### Cadastro novo produto
-Esse modelo de fluxo é responsável por cadastrar um novo produto a partir de um formulário e, em seguida, listar os produtos cadastrados. Esse mesmo modelo é usado para deletar um produto da lista.
-![Diagrama 1](https://github.com/EduardoAndujar/assets/blob/main/DiagramaSverlet1.svg)
+### Modelo de fluxo do projeto
+![Diagrama 1](https://github.com/EduardoAndujar/assets/blob/main/DiagramaCadastroAlunos.svg)
+O modelo é baseado no Padrão MVC. Dessa forma, cada requisição realizada pelo navegador é passada pelos filtros MonitoramentoRequisicaoFilter e AutorizacaoFilter que, respectivamente, monitora o tempo de execução de cada requsição e verifica se o usuário está logado (caso não, o redireciona para o Login).
 
-### Alterar dados de um produto
-Esse modelo de fluxo é responsável por acessar uma página para alterar as informações de um produto. Assim que é feito essas alterações, é listado os produtos cadastrados.
-![Diagrama 2](https://github.com/EduardoAndujar/assets/blob/main/DiagramaServlet2.svg)
+Após a passagem pelos filtros, o Controlador (ControlerServlet) direciona para a ação necessária (Classe Java) para a execução de suas funções, que podem se comunicar com a classes modelos BancoDeDados, Aluno ou Usuario e fazer um direcionamento para uma página .jsp.
 
 # Como executar o projeto
 
-Pré-requisitos: Java 17, Apache Tomcat v9.0 e Eclipse (ou outra IDE para iniciar o Servidor Tomcat)
+## Configurações iniciais:
+Pré-requisitos: Java 17, Apache Tomcat v9.0, Apache Maven e Eclipse (ou outra IDE para iniciar o Servidor Tomcat)
 
 ```bash
 # clonar repositório
-git clone https://github.com/EduardoAndujar/cadastro-de-produtos-Servlet.git
+git clone https://github.com/EduardoAndujar/cadastro-de-alunos-PadraoMVC.git
 ```
 
 ## Executar no Eclipse
 - Em servers, criar um servidor do tipo Tomcat v9.0 Server
 - Adicionar este projeto no servidor criado (Add and Remove resources to the server)
 - Iniciar o servidor (Restart the server)
-- Por fim, em um navegador, acesse a página http://localhost:8080/produtos/home
+- Em um navegador, acesse a página http://localhost:8080/Gerenciador_1.0.0/controler?acao=FormLogin
+- Fazer o login com algum dos seguintes usuários {Login:admin Senha:123456 || Login:Eduardo Senha:987654 || Login:Joao Senha:456789 || Login:Kaue Senha:zxcvbnm123}
+- Pronto! Agora é só navegar pelos links!
 
 # Autor
 
